@@ -18,7 +18,7 @@ const Rate = ({ rating, rateChange, isClickeble }) => {
         <span
           key={i}
           style={{ cursor: "pointer" }}
-          onClick={() => isClickeble && rateChange(i + 1)}
+          onClick={() => isClickeble ? rateChange(i + 1):null}
         >
           ☆
         </span>
