@@ -1,17 +1,15 @@
-import React from "react";
-import { Input, Col } from "reactstrap";
-import Rate from "./Rate";
+import React from 'react';
+import { Input, Col } from 'reactstrap';
+import Rate from './Rate';
 
 const SearchBar = props => {
-  console.log("TCL: props", props);
-
   return (
     <>
       <Col md={6}>
         <Input
-          type="text"
+          type='text'
           onChange={props.changeHandler}
-          placeholder="Please Enter a search word..."
+          placeholder='Please Enter a search word...'
         />
       </Col>
       <Col>

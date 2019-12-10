@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { Card, CardImg } from "reactstrap";
-import ModalComp from "../Modal/Modal";
+import React, { Component } from 'react';
+import { Card, CardImg } from 'reactstrap';
+import ModalComp from '../Modal/Modal';
 
 class AddNewMovie extends Component {
   state = {
@@ -10,12 +10,13 @@ class AddNewMovie extends Component {
   render() {
     return (
       <>
-        <Card style={{ width: "20rem" }} onClick={this.toggle}>
-          <CardImg src={require("../../assets/add.svg")} />
+        <Card style={{ width: '20rem' }} onClick={this.toggle}>
+          <CardImg src={require('../../assets/add.svg')} />
         </Card>
         <ModalComp
           isOpen={this.state.isShow}
           toggle={this.toggle}
+          isEdit={false}
           addNewMovie={this.props.addNewMovie}
         />
       </>
